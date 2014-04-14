@@ -6,8 +6,10 @@ describe "Bike" do # this describes the functionality of a specific class (Bike)
 	 expect(bike).not_to be_broken # It exoect that an instance of this class has got a method called broken? and it will return to false
 	 end	
 
- #it "knows that a bike can break" do
- 	#expect(Bike.new.brake?).to be_true
- #end
+	 it "can break" do
+	 bike = Bike.new
+	 bike.break
+	 	expect(bike).to be_broken
+	 end
 
 end
