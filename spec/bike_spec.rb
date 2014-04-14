@@ -12,4 +12,10 @@ describe "Bike" do # this describes the functionality of a specific class (Bike)
 	 	expect(bike).to be_broken
 	 end
 
+	 it "should be able to be fixed" do
+	 	bike = Bike.new
+	 	bike.fix
+	 	expect(bike).not_to be_broken
+	 end
+
 end
